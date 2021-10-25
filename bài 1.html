@@ -5,28 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-<form action="">
-    inter a nunber<input type="text"  id="num">;
-    <input type="button" value="show" onclick="check()">
-</form>
 
-<script>
-    num =+prompt('inter a number');
-let total = 0;
-    let check = true;
-    for(let j = 2; j < num; j++) {
-        if (num%j == 0) {
-            alert('số k phải là số nguyên tố');
-            check = false;
-            break;
-        }
 
+    <form>
+        Enter a number: <input type="text" id="num">
+        <input type="button" value="show" onClick=" check()">
+
+    </form>
+    <script>
+        function num(N) {
+        if (N < 2) {
+        return false;
+    }
+        for (let i = 2; i < N; i++) {
+        if (N % i === 0) {
+        return false;
+    }
+    }
+        return true;
     }
 
-    if(check) {
-        alert('số nguyên tố');
+        function check() {
+        let input = +document.getElementById("num").value;
+        let count = 0;
+        for (let i = 0; i < input;) {
+        if (num(count) === true) {
+        document.write(count + ",");
+        i++
     }
-    doc
+        count++
+    }
+    }
+
+        check();
+
 </script>
 </body>
 </html>
