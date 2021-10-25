@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    inter a nunber<input type="text"  id="num">;
+    <input type="button" value="show" onclick="check()">
+</form>
+
+<script>
+    num =+prompt('inter a number');
+let total = 0;
+    let check = true;
+    for(let j = 2; j < num; j++) {
+        if (num%j == 0) {
+            alert('số k phải là số nguyên tố');
+            check = false;
+            break;
+        }
+
+    }
+
+    if(check) {
+        alert('số nguyên tố');
+    }
+    doc
+</script>
+</body>
+</html>
